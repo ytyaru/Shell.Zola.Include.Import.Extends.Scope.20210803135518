@@ -4,7 +4,7 @@
 <body>
 {% block content %}{% endblock %}
 {% set title = "extendsのスコープ調査" %}
-{% set summary = "extendsされる側で定義した変数は、extendsする側で参照できた。" %}
+{% set summary = "extendsされる側で定義した変数は、extendsする側で参照できなかった（setはblockの後）。" %}
 </body>
 </html>
 
