@@ -1,0 +1,4 @@
+{% macro body() %}
+{% set title = "importのスコープ調査" %}
+{% set summary = "importする側で定義した変数は、importされる側で参照できなかった。<code>Reason: Variable `title` not found in context while rendering 'macro/body.html'</code>" %}
+{% endmacro body %}
