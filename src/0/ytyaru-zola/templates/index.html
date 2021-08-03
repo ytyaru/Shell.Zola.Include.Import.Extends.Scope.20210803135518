@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+{% set title = "変数に代入されたタイトル" %}
+{% set summary = "変数に代入された要約です。includeする側で定義した変数は、includeされる側で参照できるのか？　答えは「参照できる」。" %}
+{% include "include/body.html" %}
+</body>
+</html>
