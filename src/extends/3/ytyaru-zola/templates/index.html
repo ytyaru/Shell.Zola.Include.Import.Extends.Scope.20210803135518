@@ -1,0 +1,9 @@
+{% extends "extends/base.html" %}
+
+{% set title = "extendsのスコープ調査" %}
+{% set summary = "extendsする側で定義した変数は、extendsする側でさえ参照できなかった（setはextendsの後でblockの前。block内で参照）" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p>{{ summary }}</p>
+{% endblock content %}
